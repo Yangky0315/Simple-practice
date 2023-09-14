@@ -1,0 +1,13 @@
+w=imread('test.img');
+w=double(w);
+F_w=fft2(w);%傅立叶变换到频率域
+F_w=fftshift(F_w);
+IF_w=ifftshift(F_w);
+IF_w=ifft2(IF_w);
+F_w_L=log(abs(F_w)+1);
+errors=uint8(IF_w)-uint8(w);
+std=std2(errors);
+figure,imshow(abs(F_w),[]);title('线性变换（0-255）');
+figure,imshow(F_w_L,[]);title('对数变换');
+figure,imshow(IF_w,[]);title('傅立叶逆变换结果');
+figure,imshow(errors,[]);title('误差图');

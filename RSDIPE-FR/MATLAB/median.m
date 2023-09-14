@@ -1,0 +1,12 @@
+img=imread('building.gif');
+med_3=medfilt2(img,[3,3]);%中值滤波3*3
+med_5=medfilt2(img,[5,5]);%中值滤波5*5
+med_7=medfilt2(img,[7,7]);%中值滤波7*7
+figure
+imshow(img);title('原图')
+figure
+imshow(med_3);title('中值滤波3*3')
+figure
+imshow(med_5);title('中值滤波5*5')
+figure
+imshow(med_7);title('中值滤波7*7')

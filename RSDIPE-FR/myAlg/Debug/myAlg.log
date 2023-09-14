@@ -1,0 +1,49 @@
+﻿生成启动时间为 2023/9/14 14:46:48。
+     1>项目“D:\study\遥感图像处理\RSDIPE-FR_杨可意_20210108\myAlg\myAlg.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\myAlg.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+         所有输出均为最新。
+       ResourceCompile:
+         所有输出均为最新。
+       ManifestResourceCompile:
+         所有输出均为最新。
+       Link:
+         所有输出均为最新。
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\study\遥感图像处理\RSDIPE-FR_杨可意_20210108\myAlg\Debug\myAlg.exe" /INCREMENTAL /NOLOGO /LIBPATH:"D:\study\遥感图像处理\RSDIPE-FR_杨可意_20210108\myAlg\.\package_support\gdal\lib" /LIBPATH:"D:\study\遥感图像处理\RSDIPE-FR_杨可意_20210108\myAlg\..\rsdiplib\lib\\" rsdiplib.lib gdal_i.lib /MANIFEST /ManifestFile:"Debug\myAlg.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\study\遥感图像处理\RSDIPE-FR_杨可意_20210108\myAlg\Debug\myAlg.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\study\遥感图像处理\RSDIPE-FR_杨可意_20210108\myAlg\Debug\myAlg.lib" /MACHINE:X86 Debug\myAlg.res
+         Debug\myAlg.exe.embed.manifest.res
+         Debug\ImageProcessingEx.obj
+         Debug\myAlg.obj
+         Debug\myAlgDlg.obj
+         Debug\stdafx.obj
+            正在创建库 D:\study\遥感图像处理\RSDIPE-FR_杨可意_20210108\myAlg\Debug\myAlg.lib 和对象 D:\study\遥感图像处理\RSDIPE-FR_杨可意_20210108\myAlg\Debug\myAlg.exp
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\myAlg.exe.embed.manifest" /manifest Debug\myAlg.exe.intermediate.manifest "D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+         所有输出均为最新。
+       LinkEmbedManifest:
+         所有输出均为最新。
+         myAlg.vcxproj -> D:\study\遥感图像处理\RSDIPE-FR_杨可意_20210108\myAlg\Debug\myAlg.exe
+       PostBuildEvent:
+         copy "D:\study\遥感图像处理\RSDIPE-FR_杨可意_20210108\myAlg\..\rsdiplib\lib\*.dll" "Debug"
+         :VCEnd
+         D:\study\遥感图像处理\RSDIPE-FR_杨可意_20210108\myAlg\..\rsdiplib\lib\gdal15.dll
+         D:\study\遥感图像处理\RSDIPE-FR_杨可意_20210108\myAlg\..\rsdiplib\lib\geos_c_fw.dll
+         D:\study\遥感图像处理\RSDIPE-FR_杨可意_20210108\myAlg\..\rsdiplib\lib\geos_fw.dll
+         D:\study\遥感图像处理\RSDIPE-FR_杨可意_20210108\myAlg\..\rsdiplib\lib\libcurl.dll
+         D:\study\遥感图像处理\RSDIPE-FR_杨可意_20210108\myAlg\..\rsdiplib\lib\libeay32.dll
+         D:\study\遥感图像处理\RSDIPE-FR_杨可意_20210108\myAlg\..\rsdiplib\lib\msvcp71.dll
+         D:\study\遥感图像处理\RSDIPE-FR_杨可意_20210108\myAlg\..\rsdiplib\lib\msvcr71.dll
+         D:\study\遥感图像处理\RSDIPE-FR_杨可意_20210108\myAlg\..\rsdiplib\lib\nrcLibD.dll
+         D:\study\遥感图像处理\RSDIPE-FR_杨可意_20210108\myAlg\..\rsdiplib\lib\RSDIPLib.dll
+         D:\study\遥感图像处理\RSDIPE-FR_杨可意_20210108\myAlg\..\rsdiplib\lib\ssleay32.dll
+         D:\study\遥感图像处理\RSDIPE-FR_杨可意_20210108\myAlg\..\rsdiplib\lib\zlib1.dll
+         已复制        11 个文件。
+       FinalizeBuildStatus:
+         正在删除文件“Debug\myAlg.unsuccessfulbuild”。
+         正在对“Debug\myAlg.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“D:\study\遥感图像处理\RSDIPE-FR_杨可意_20210108\myAlg\myAlg.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:00.91

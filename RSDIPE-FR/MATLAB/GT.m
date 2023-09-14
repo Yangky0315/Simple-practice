@@ -1,0 +1,42 @@
+img=imread('building.gif');
+D0=40;
+n=5;
+img=double(img);
+F_img=fft2(img);
+F_img=fftshift(F_img);
+%获得图像的高度和宽度
+[M,N]=size(F_img);
+%图像中心点
+m=M/2;
+n=N/2;
+for i=1:M
+    for j=1:N
+        D=sqrt((i-m)^2+(j-n)^2);
+        %计算理想高通
+        if D<D0
+            h_L=0;
+        else
+            h_L=1;
+        end
+        result_L(i,j)=h_L*F_img(i,j);
+        %计算巴特沃斯高通
+        h_B=(1/(1+(D0/D)^(2*N)))+0.5;
+        result_B(i,j)=h_B*F_img(i,j);        
+        %计算高斯高通
+        h_G=1-exp(-(D^2)/(2*(D0^2)));
+        result_G(i,j)=h_G*F_img(i,j);
+    end
+end
+result_L=ifftshift(result_L);
+imgout_L=ifft2(result_L);
+result_B=ifftshift(result_B);
+imgout_B=ifft2(result_B);
+result_G=ifftshift(result_G);
+imgout_G=ifft2(result_G);
+figure,imshow(abs(F_img),[]),title('DFT结果')
+figure,imshow(log(abs(F_img)+1),[]);title('对数拉伸');
+figure,imshow(angle(F_img)*180/pi,[]);title('角谱');
+figure,imshow(log(abs(F_img)^2+1),[]);title('能量谱');
+figure,imshow(imgout_L,[]),title('理想高通滤波');
+figure,imshow(imgout_B,[]),title('巴特沃斯高通滤波');
+figure,imshow(imgout_G,[]),title('高斯高通滤波');
